@@ -1,16 +1,16 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
     background-color: #fff;
 }
 
 .margin {
-    margin: 2em;
-}
-
-.container {
-    width: 1170px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin: 50px 0;
 }
 
 header {
@@ -18,20 +18,19 @@ header {
     text-align: center;
 }
 
-.header {
+#title {
     width: 750px;
-    margin: 50px auto;
     padding: 20px;
     border: 5px solid #000;
 }
 
-.header h1 {
+#title h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
+    font-size: 45px;
 }
 
-.header h3 {
-    font-size: 25px;
+#title h3 {
+    font-size: 23px;
 }
 
 .center {
@@ -50,15 +49,27 @@ header {
     -moz-box-shadow: 0 0 65px -10px rgba(0, 0, 0, 0.65);
     box-shadow: 0 0 65px -10px rgba(0, 0, 0, 0.65);
     transition: box-shadow .2s ease, filter .2s ease;
-    width: 42%;
+    width: 60%;
 }
 
 #img-div img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
-#img-caption{
-    font-size: 25px;
+#img-caption {
+    font-size: 22px;
     padding-top: 20px;
     padding-bottom: 5px;
+}
+
+#tribute-info {
+    line-height: 28px;
+}
+
+#tribute-link {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
 }

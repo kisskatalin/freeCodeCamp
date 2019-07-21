@@ -2,7 +2,7 @@
 
 <b>Completed projects for [freeCodeCamp](https://www.freecodecamp.org) coding challenge.</b>
 
-## [Responsive Web Design Projects]
+## Responsive Web Design Projects
 - [x] Build a Tribute Page
 - [ ] Build a Survey Form
 - [ ] Build a Product Landing Page

@@ -1,4 +1,4 @@
- [Live preview](https://prezli.github.io/freeCodeCamp/ResponsiveWebDesign/Tribute/)
+ [Link](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) to the task description.
  
  ## Credit
  

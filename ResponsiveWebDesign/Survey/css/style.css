@@ -1,0 +1,17 @@
+body {
+    color: #000;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#title {
+
+}

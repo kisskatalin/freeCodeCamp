@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <h1 id="title" class="center">Customer Satisfaction Survey</h1>
-        <p id="description" class="center">Let us know your opinion and help us improve to make our store better for you.</p>
+        <p id="description" class="center">Let us know your opinion and help us improve to make our stores better for you.</p>
 
         <form id="survey-form">
         <fieldset>
@@ -27,10 +27,17 @@
             <legend>Questions:</legend>
                 <select id="dropdown">
                     <option selected disabled>Select an option</option>
-                    <option>1</option>
-                    <option>2</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
                 </select>
+
+                <input type="radio" name="score" value="v-satisfied"> Very satisfied
+                <input type="radio" name="score" value="satisfied"> Satisfied
+
+
         </fieldset>
+
+
         </form>
     </div>
 

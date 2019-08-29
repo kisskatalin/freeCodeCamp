@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
     width: 800px;
     background-color: #FFFBF7;
-    padding: 25px;
+    padding: 30px;
 }
 
 h1 {
@@ -50,8 +50,8 @@ fieldset {
     justify-content: center;
 }
 
-.satisfaction {
-    padding: 20px 0;
+.question {
+    padding-bottom: 20px;
 }
 
 ul {
@@ -65,8 +65,13 @@ textarea {
     height: 100px;
 }
 
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
 input[type=submit] {
-    color: rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.85);
     background-color: #4E8098;
     font-size: 15px;
     border: none;

@@ -2,4 +2,4 @@
 
 ## Credit
 
- - [Background](https://www.freepik.com/free-photos-vectors/background)
+ - [Background](#)

@@ -8,11 +8,12 @@
 <body>
     <div class="container">
         <h1 id="title" class="center">Customer Satisfaction Survey</h1>
-        <p id="description" class="center">Let us know your opinion and help us improve to make our stores better for you.</p>
+        <p id="description" class="center">Thank you for agreeing to take part in this survey. Your opinions will help us serve you better.</p>
 
         <form id="survey-form">
         <fieldset>
-            <legend>Personal details:</legend>
+            <legend>Your personal details:</legend>
+            <div id="personal-details">
                 <label for="name" id="name-label">Name:</label>
                 <input id="name" type="text" placeholder="Name" required> (required)
 
@@ -20,36 +21,64 @@
                 <input id="email" type="email" placeholder="E-mail" required> (required)
 
                 <label for="number" id="number-label">Age:</label>
-                <input id="number" type="number" min="1" max="100" placeholder="Age" required>
+                <input id="number" type="number" min="1" max="100" placeholder="Age" required> (required)
+            </div>
         </fieldset>
 
         <fieldset>
             <legend>Questions:</legend>
-                <select id="dropdown">
-                    <option selected disabled>Select an option</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                </select>
+            <div>
+                <h2>In which of our store did you just shop?</h2>
+                    <select id="dropdown">
+                        <option selected disabled>Select an option</option>
+                        <option value="">El Dorado, Arkansas</option>
+                        <option value="">Jackson, Mississippi</option>
+                        <option value="">Lincoln, Nebraska</option>
+                        <option value="">Fort Wayne, Indiana</option>
+                        <option value="">Lexington, Kentucky</option>
+                        <option value="">Pittsburgh, Pennsylvania</option>
+                        <option value="">Sacramento, California</option>
+                        <option value="">Tucson, Arizona</option>
+                    </select>
+            </div>
 
-                <input type="radio" name="score" value="v-satisfied"> Very satisfied
-                <input type="radio" name="score" value="satisfied"> Satisfied
-                <input type="radio" name="score" value="neutral"> Neutral
-                <input type="radio" name="score" value="dissatisfied"> Dissatisfied
-                <input type="radio" name="score" value="v-dissatisfied"> Very dissatisfied
+            <div>
+                <h2>How satisfied were you with your shopping experience in our store?</h2>
+                    <ul>
+                        <li><input type="radio" name="satisfaction" value="v-satisfied"> Very satisfied</li>
+                        <li><input type="radio" name="satisfaction" value="satisfied"> Satisfied</li>
+                        <li><input type="radio" name="satisfaction" value="neutral"> Neutral</li>
+                        <li><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</li>
+                        <li><input type="radio" name="satisfaction" value="v-dissatisfied"> Very dissatisfied</li>
+                    </ul>
+            </div>
 
-            <ul>
-                <li><input type="checkbox" name="checkbox" value="food">Food</li>
-                <li><input type="checkbox" name="checkbox" value="p-food">Pet food</li>
-            </ul>
+            <div>
+                <h2>What types of products did you purchase in our store?</h2>
+                    <ul>
+                        <li><input type="checkbox" name="type" value="beverages">Beverages</li>
+                        <li><input type="checkbox" name="type" value="bakery">Bakery</li>
+                        <li><input type="checkbox" name="type" value="canned-goods">Canned/jarred goods</li>
+                        <li><input type="checkbox" name="type" value="dairy">Dairy</li>
+                        <li><input type="checkbox" name="type" value="dry-goods">Dry/baking goods</li>
+                        <li><input type="checkbox" name="type" value="frozen-foods">Frozen foods</li>
+                        <li><input type="checkbox" name="type" value="meat">Meat</li>
+                        <li><input type="checkbox" name="type" value="produce">Produce</li>
+                        <li><input type="checkbox" name="type" value="cleaners">Cleaners</li>
+                        <li><input type="checkbox" name="type" value="paper-goods">Paper goods</li>
+                        <li><input type="checkbox" name="type" value="personal-care">Personal care</li>
+                        <li><input type="checkbox" name="type" value="other">Other</li>
+                    </ul>
+            </div>
+            </fieldset>
 
+            <fieldset>
+                <legend>Your comment:</legend>
             <textarea name="comments"></textarea>
+            </fieldset>
+
 
             <button type="submit" id="submit">Submit</button>
-
-
-        </fieldset>
-
-
         </form>
     </div>
 

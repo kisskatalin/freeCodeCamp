@@ -3,7 +3,7 @@
 body {
     margin: 0 auto;
     color: #313131;
-    background-image: url("bg.jpg");
+    background-image: url("../img/bg.jpg");
     font-family: 'Assistant', sans-serif;
 }
 
@@ -50,14 +50,23 @@ fieldset {
     justify-content: center;
 }
 
+#dropdown {
+    margin-bottom: 20px;
+}
+
 .question {
-    padding-bottom: 20px;
+    display: grid;
+    grid-gap: 30px;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 textarea {

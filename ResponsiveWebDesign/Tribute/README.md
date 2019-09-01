@@ -1,4 +1,4 @@
- [Link](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) to the task description.
+[Link](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) to the task description.
  
  ## Credit
  

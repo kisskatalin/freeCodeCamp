@@ -7,13 +7,15 @@
 </head>
 <body>
     <header id="header">
-        <div><img id="header-img" src="#"></div>
         <nav id="nav-bar">
-            <ul>
-                <li><a class="nav-link" href="#header">Home</a></li>
-                <li><a class="nav-link" href="#features">Features</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+            <div>
+                <img id="header-img" src="img/logo.png">
+            </div>
+                <ul id="menu">
+                    <li><a class="nav-link" href="#header">Home</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
         </nav>
     </header>
 
@@ -27,12 +29,29 @@
 
     <div class="container">
         <section id="features">
-            Text
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yj-KgXGxdgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h2>Features</h2>
+
+            <div class="features-container">
+                <div>
+                    <img src="img/feature1.gif">
+                    <h3>Film roll</h3>
+                </div>
+                <div>
+                    <img src="img/feature2.gif">
+                    <h3>Digital display & zoom</h3>
+                </div>
+                <div>
+                    <img src="img/feature3.gif">
+                    <h3>Strap</h3>
+                </div>
+            </div>
+                <iframe id="video" width="600" height="450" src="https://www.youtube.com/embed/yj-KgXGxdgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         </section>
 
         <section id="contact">
-            <h2>Subscribe to our newsletter</h2>
+            <h2 class="smaller">Subscribe to our newsletter</h2>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <input type="email" id="email" name="email" placeholder="Enter your e-mail">
                 <input type="submit" id="submit" value="Submit">

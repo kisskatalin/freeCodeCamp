@@ -2,10 +2,13 @@
 
 body {
     margin: 0 auto;
+    font-family: 'Assistant', sans-serif;
 }
 
-#header {
-    position: absolute;
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 h1 {
@@ -21,7 +24,7 @@ h1 {
     overflow: hidden;
 }
 
-#video {
+#main-video {
     height: 90vh;
     width: 100%;
     left: 0;
@@ -29,4 +32,38 @@ h1 {
     position: absolute;
     overflow: hidden;
     z-index: -1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1020px;
+    text-align: center;
+}
+
+#features {
+    display: grid;
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=submit] {
+    color: rgba(22, 22, 22, 0.85);
+    background-color: #fff57b;
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
 }

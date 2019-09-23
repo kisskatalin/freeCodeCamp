@@ -5,6 +5,6 @@
 ## Responsive Web Design Projects
 - [x] [Build a Tribute Page](https://github.com/prezli/freeCodeCamp/tree/master/ResponsiveWebDesign/Tribute)
 - [x] [Build a Survey Form](https://github.com/prezli/freeCodeCamp/tree/master/ResponsiveWebDesign/Survey)
-- [ ] Build a Product Landing Page
+- [x] [Build a Product Landing Page](https://github.com/prezli/freeCodeCamp/tree/master/ResponsiveWebDesign/Landing)
 - [ ] Build a Technical Documentation Page
 - [ ] Build a Personal Portfolio Webpage

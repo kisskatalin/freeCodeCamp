@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -17,9 +17,62 @@ nav {
     width: 25vw;
     left: 0;
     top: 0;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#navbar header {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
 }
 
 main {
     position: absolute;
     left: 25vw;
+    padding: 20px;
+    line-height: 25px;
+}
+
+main a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main-section header {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+code {
+    display: block;
+    background-color: #f5f6f9;
+    padding: 10px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 60em) {
+    nav {
+        position: unset;
+        width: 100%;
+        height: unset;
+    }
+
+    main {
+        position: unset;
+        width: 100%;
+        left: 0;
+        padding: unset;
+    }
 }

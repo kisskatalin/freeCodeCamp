@@ -10,9 +10,9 @@
         <header>CSS Documentation</header>
         <ul>
             <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link" href="#Values">Values</a></li>
             <li><a class="nav-link" href="#Selectors">Selectors</a></li>
-            <li><a class="nav-link" href="#Blocks">Blocks</a></li>
+            <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+            <li><a class="nav-link" href="#Box_model">Box model</a></li>
             <li><a class="nav-link" href="#Layout">Layout</a></li>
         </ul>
     </nav>
@@ -20,22 +20,107 @@
     <main id="main-doc">
         <section id="Introduction" class="main-section">
             <header>Introduction</header>
-        </section>
-
-        <section id="Values" class="main-section">
-            <header>Values</header>
+            <p>CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+            <p>A document is usually a text file structured using a markup language — HTML is the most common markup language, but you may also come across other markup languages such as SVG or XML.</p>
+            <p>Presenting a document to a user means converting it into a form usable by your audience. Browsers, like Firefox, Chrome, or Edge , are designed to present documents visually, for example, on a computer screen, projector or printer.</p>
+            <p>CSS can be used for very basic document text styling — for example changing the color and size of headings and links. It can be used to create layout — for example turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation.</p>
         </section>
 
         <section id="Selectors" class="main-section">
             <header>Selectors</header>
+            <p>In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. In this article and its sub-articles we'll run through the different types in great detail, seeing how they work.</p>
+            <p>If you have more than one thing which uses the same CSS then the individual selectors can be combined into a selector list so that the rule is applied to all of the individual selectors. For example, if I have the same CSS for an h1 and also a class of .special, I could write this as two separate rules.</p>
+            <p>
+                <code>
+                    h1 {
+                    <br>&emsp;color: blue;
+                    <br>}
+                    <br>
+                    <br>.special {
+                    <br>&emsp;color: blue;
+                    <br>}
+                </code>
+            </p>
+            <p>I could also combine these into a selector list, by adding a comma between them.</p>
+            <p>
+                <code>
+                    h1, .special {
+                    <br>&emsp;color: blue;
+                    <br>}
+                </code>
+            </p>
+            <p>White space is valid before or after the comma. You may also find the selectors more readable if each is on a new line.</p>
+            <p>
+                <code>
+                    h1,
+                    <br>.special {
+                    <br>&emsp;color: blue;
+                    <br>}
+                </code>
+            </p>
         </section>
 
-        <section id="Blocks" class="main-section">
-            <header>Blocks</header>
+        <section id="Syntax" class="main-section">
+            <header>Syntax</header>
+            <p>Now that you have an idea about what CSS is and the basics of using it, it is time to look a little deeper into the structure of the language itself. We have already met many of the concepts discussed here; you can return to this one to recap if you find any later concepts confusing.</p>
+            <p>An external stylesheet is when you have your CSS written in a separate file with a .css extension, and you reference it from an HTML <link> element:</p>
+            <p>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    <br>&lt;html&gt;
+                    <br>&emsp;&lt;head&gt;
+                    <br>&emsp;&emsp;&lt;meta charset="utf-8"&gt;
+                    <br>&emsp;&emsp;&lt;title>My CSS experiment&lt;/title&gt;
+                    <br>&emsp;&emsp;&lt;link rel="stylesheet" href="styles.css"&gt;
+                    <br>&emsp;&lt;/head&gt;
+                    <br>&emsp;&lt;body&gt;
+                    <br>&emsp;&emsp;&lt;h1>Hello World!&lt;/h1&gt;
+                    <br>&emsp;&emsp;&lt;p>This is my first CSS example&lt;/p&gt;
+                    <br>&emsp;&lt;/body&gt;
+                    <br>&lt;/html&gt;
+                </code>
+            </p>
+            <p>The CSS file might look something like this:</p>
+            <p>
+                <code>
+                    h1 {
+                    <br>&emsp;color: blue;
+                    <br>&emsp;background-color: yellow;
+                    <br>&emsp;border: 1px solid black;
+                    <br>}
+                    <br>
+                    <br>p {
+                    <br>&emsp;color: red;
+                    <br>}
+                </code>
+            </p>
+        </section>
+
+        <section id="Box_model" class="main-section">
+            <header>Box model</header>
+            <p>Everything in CSS has a box around it, and understanding these boxes is key to being able to create layouts with CSS, or to align items with other items. In this lesson we will take a proper look at the CSS Box Model, in order that you can move onto more complex layout tasks with an understanding of how it works and the terminology that relates to it.</p>
+            <p>In CSS we broadly have two types of box — block boxes and inline boxes. These characteristics refer to how the box behaves in terms of page flow, and in relation to other boxes on the page:</p>
+            <p>If a box is defined as a block, it will behave in the following ways:</p>
+            <ul>
+                <li>The box will extend in the inline direction to fill the space available in its container. In most cases this means that the box will become as wide as its container, filling up 100% of the space available.</li>
+                <li>The box will break onto a new line.</li>
+                <li>The width and height properties are respected.</li>
+                <li>Padding, margin and border will cause other elements to be pushed away from the box</li>
+            </ul>
+            <p>Unless we decide to change the display type to inline, elements such as headings (e.g. &lt;h1&gt;) and &lt;p&gt;s all use block as their outer display type by default.</p>
+            <p>If a box has an outer display type of inline, then:</p>
+            <ul>
+                <li>The box will not break onto a new line.</li>
+                <li>The width and height properties will not apply.</li>
+                <li>Padding, margin and borders will apply but will not cause other inline boxes to move away from the box.</li>
+                <li> The &lt;a&gt; element, used for links, &lt;span&gt;, &lt;em&gt; and &lt;strong&gt; are all examples of elements that will display inline by default.</li>
+            </ul>
+            <p>The type of box applied to an element is defined by display property values such as block and inline, and relates to the outer value of display.</p>
         </section>
 
         <section id="Layout" class="main-section">
             <header>Layout</header>
+            <p>CSS page layout techniques allow us to take elements contained in a web page and control where they are positioned relative to their default position in normal layout flow, the other elements around them, their parent container, or the main viewport/window.</p>
         </section>
     </main>
 

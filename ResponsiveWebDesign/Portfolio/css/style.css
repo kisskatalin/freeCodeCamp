@@ -17,7 +17,8 @@ body {
     top: 0;
     width: 100%;
     height: 75px;
-    background-color: #ff000024;
+    background-color: #fe7f2d;
+    border-bottom: 3px solid #ffffff;
 }
 
 #navbar ul {
@@ -69,7 +70,7 @@ body {
 #about {
     text-align: center;
     background-color: #fe7f2d;
-    padding: 50px 100px;
+    padding-bottom: 150px;
 }
 
 #about h2 {
@@ -113,6 +114,17 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     opacity: 1;
+}
+
+#contact {
+    text-align: center;
+    background-color: #fcca46;
+    padding: 40px 50px;
+}
+
+#contact a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 60em) {

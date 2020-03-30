@@ -16,6 +16,7 @@ body {
     top: 0;
     width: 100%;
     height: 75px;
+    background-color: #ff000024;
 }
 
 #navbar ul {
@@ -61,7 +62,24 @@ body {
      line-height: 26px;
      font-style: italic;
      font-weight: 300;
+     margin-top: 30px;
  }
+
+#about {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#about h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #fe7f2d;
+    padding: 50px 100px;
+}
+
+#about p {
+    color: #0000007c;
+}
 
 @media screen and (max-width: 60em) {
     #welcome-section {height: 80vh;}   

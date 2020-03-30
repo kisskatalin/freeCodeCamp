@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,400i,700,800');
 
 * {
     margin: 0;
@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
 }
 
 #navbar {
@@ -67,18 +68,51 @@ body {
 
 #about {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #fe7f2d;
+    padding: 50px 100px;
 }
 
 #about h2 {
     font-size: 40px;
     font-weight: 300;
-    color: #fe7f2d;
-    padding: 50px 100px;
+    color: #ffffff;
+    margin-bottom: 30px;
 }
 
 #about p {
-    color: #0000007c;
+    color: #ffffff;
+}
+
+#projects {
+    text-align: center;
+    background-image: linear-gradient( #fe7f2d, #fcca46);
+    padding-bottom: 50px;
+}
+
+.projects_section {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 500px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.projects_section .project-tile {
+    background-color: #ffffff;
+}
+
+.projects_section .project-text {
+    padding: 30px;
+}
+
+.projects_section .project-tile a {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fe7f2d;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 1;
 }
 
 @media screen and (max-width: 60em) {

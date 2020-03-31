@@ -7,4 +7,4 @@
 - [x] [Build a Survey Form](https://github.com/prezli/freeCodeCamp/tree/master/ResponsiveWebDesign/Survey)
 - [x] [Build a Product Landing Page](https://github.com/prezli/freeCodeCamp/tree/master/ResponsiveWebDesign/Landing)
 - [x] [Build a Technical Documentation Page](https://github.com/prezli/freeCodeCamp/tree/master/ResponsiveWebDesign/Documentation)
-- [ ] Build a Personal Portfolio Webpage
+- [x] [Build a Personal Portfolio Webpage](https://github.com/prezli/freeCodeCamp/tree/master/ResponsiveWebDesign/Portfolio)
